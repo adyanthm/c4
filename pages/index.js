@@ -74,7 +74,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
+    <div className="min-h-screen bg-gray-100 py-8 relative">
+      <div className="absolute right-8 top-8 text-right">
+        <div className="text-3xl text-gray-300 font-bold tracking-wider">
+          Built By <span className="text-blue-400 font-extrabold">ARADHYA</span>
+        </div>
+      </div>
+
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-8">Connect 4</h1>
 
