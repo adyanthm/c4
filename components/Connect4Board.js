@@ -42,18 +42,18 @@ const Connect4Board = ({
   };
 
   return (
-    <div className="grid gap-2 bg-blue-800 p-4 rounded-lg">
+    <div className="grid gap-1 sm:gap-2 bg-blue-800 p-2 sm:p-4 rounded-lg">
       {Array(6)
         .fill(null)
         .map((_, rowIndex) => (
-          <div key={rowIndex} className="flex gap-2">
+          <div key={rowIndex} className="flex gap-1 sm:gap-2">
             {Array(7)
               .fill(null)
               .map((_, colIndex) => (
                 <div
                   key={colIndex}
                   onClick={() => handleColumnClick(colIndex)}
-                  className={`w-12 h-12 rounded-full cursor-pointer transition-all duration-150
+                  className={`w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full cursor-pointer transition-all duration-150
                 ${
                   board[rowIndex][colIndex] === 0
                     ? "bg-white hover:bg-gray-200"
